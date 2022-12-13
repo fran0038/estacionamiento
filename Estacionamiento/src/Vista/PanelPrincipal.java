@@ -4,7 +4,6 @@
  */
 package Vista;
 
-import java.awt.BorderLayout;
 import javax.swing.JComponent;
 
 /**
@@ -13,24 +12,31 @@ import javax.swing.JComponent;
  */
 public class PanelPrincipal extends javax.swing.JFrame {
     
+    public Login login;
 
     /**
      * Creates new form PanelPrincipal
      */
     public PanelPrincipal() {
+        login = new Login(this);
+        login.setSize(600, 465);
+        login.setLocation(0, 0);
+        
         initComponents();
-         TicketVehiculo tv = new TicketVehiculo();
-         
+        vistaPrograma(login);
+        
     }
     
-    public void setForm(JComponent com){
-        
-        mainPanel.removeAll();
-        mainPanel.add(com,BorderLayout.CENTER);
-        mainPanel.repaint();
-        mainPanel.revalidate();
-        
+    
+    public void vistaPrograma(JComponent com){
+        pPrincipal.removeAll();
+        pPrincipal.add(com);
+        pPrincipal.repaint();
+        pPrincipal.revalidate();
     }
+    
+    
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -41,162 +47,38 @@ public class PanelPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        btnServicios = new javax.swing.JButton();
-        mainPanel = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        btnTicketVehiculo = new javax.swing.JButton();
-        btnChofer = new javax.swing.JButton();
-        btnConsultar = new javax.swing.JButton();
+        pPrincipal = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(125, 210, 245));
 
-        jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 36)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Menu Principal");
-
-        btnServicios.setFont(new java.awt.Font("Bookman Old Style", 1, 18)); // NOI18N
-        btnServicios.setText("Servicios");
-        btnServicios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnServiciosActionPerformed(evt);
-            }
-        });
-
-        mainPanel.setBackground(new java.awt.Color(125, 210, 245));
-
-        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
-        mainPanel.setLayout(mainPanelLayout);
-        mainPanelLayout.setHorizontalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 621, Short.MAX_VALUE)
+        javax.swing.GroupLayout pPrincipalLayout = new javax.swing.GroupLayout(pPrincipal);
+        pPrincipal.setLayout(pPrincipalLayout);
+        pPrincipalLayout.setHorizontalGroup(
+            pPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 635, Short.MAX_VALUE)
         );
-        mainPanelLayout.setVerticalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 507, Short.MAX_VALUE)
+        pPrincipalLayout.setVerticalGroup(
+            pPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 519, Short.MAX_VALUE)
         );
-
-        jButton1.setFont(new java.awt.Font("Bookman Old Style", 1, 18)); // NOI18N
-        jButton1.setText("Inicio session");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        btnTicketVehiculo.setFont(new java.awt.Font("Bookman Old Style", 1, 18)); // NOI18N
-        btnTicketVehiculo.setText("Ticket Vehiculo");
-        btnTicketVehiculo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTicketVehiculoActionPerformed(evt);
-            }
-        });
-
-        btnChofer.setFont(new java.awt.Font("Bookman Old Style", 1, 18)); // NOI18N
-        btnChofer.setText("Chofer");
-        btnChofer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnChoferActionPerformed(evt);
-            }
-        });
-
-        btnConsultar.setFont(new java.awt.Font("Bookman Old Style", 1, 18)); // NOI18N
-        btnConsultar.setText("Consultar");
-        btnConsultar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnConsultarActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnConsultar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnServicios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnTicketVehiculo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnChofer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, 0)
+                .addComponent(pPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(22, 22, 22))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(123, 123, 123)
-                        .addComponent(btnServicios)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnTicketVehiculo, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(btnChofer, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(89, Short.MAX_VALUE))
+            .addComponent(pPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServiciosActionPerformed
-        // TODO add your handling code here:
-        PanelServicios panelServicios = new PanelServicios();
-        panelServicios.setSize(600 , 450);
-        panelServicios.setLocation(0, 0);
-        setForm(panelServicios);
-        
-    }//GEN-LAST:event_btnServiciosActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void btnTicketVehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTicketVehiculoActionPerformed
-        // TODO add your handling code here:
-        
-        TicketVehiculo tiv = new TicketVehiculo();
-        tiv.setSize(600, 450);
-        tiv.setLocation(0, 0);
-        setForm(tiv);
-    }//GEN-LAST:event_btnTicketVehiculoActionPerformed
-
-    private void btnChoferActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChoferActionPerformed
-        // TODO add your handling code here:
-        IngresarClientes ingcli = new IngresarClientes();
-        ingcli.setSize(800,800);
-        ingcli.setLocation(-70,0);
-        setForm(ingcli);
-    }//GEN-LAST:event_btnChoferActionPerformed
-
-    private void btnConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarActionPerformed
-        // TODO add your handling code here:
-        PanelConsultar conscli = new PanelConsultar();
-        conscli.setSize(600, 800);
-        conscli.setLocation(0,0);
-        setForm(conscli);
-    }//GEN-LAST:event_btnConsultarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -234,12 +116,6 @@ public class PanelPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnChofer;
-    private javax.swing.JButton btnConsultar;
-    private javax.swing.JButton btnServicios;
-    private javax.swing.JButton btnTicketVehiculo;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel mainPanel;
+    private javax.swing.JPanel pPrincipal;
     // End of variables declaration//GEN-END:variables
 }
