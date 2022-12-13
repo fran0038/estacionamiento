@@ -46,7 +46,11 @@ public class Login extends javax.swing.JPanel {
             }
         }
         mainPanel = new MainPanel();
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/Login.java
         mainPanel.setSize(1500, 1200);
+=======
+        mainPanel.setSize(600, 600);
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/Login.java
         mainPanel.setLocation(0, 0);
         
         panelPrincipal.vistaPrograma(mainPanel);
@@ -73,6 +77,7 @@ public class Login extends javax.swing.JPanel {
         btnIniciarSesion = new javax.swing.JButton();
         etPassword = new javax.swing.JPasswordField();
 
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/Login.java
         setToolTipText("center");
         setMaximumSize(new java.awt.Dimension(600, 400));
 
@@ -80,6 +85,10 @@ public class Login extends javax.swing.JPanel {
         jPanel1.setForeground(new java.awt.Color(137, 194, 217));
         jPanel1.setToolTipText("center");
         jPanel1.setMaximumSize(new java.awt.Dimension(600, 400));
+=======
+        jPanel1.setBackground(new java.awt.Color(136, 232, 242));
+        jPanel1.setForeground(new java.awt.Color(137, 194, 217));
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/Login.java
 
         jLabel1.setBackground(new java.awt.Color(242, 242, 24));
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 36)); // NOI18N
@@ -131,7 +140,11 @@ public class Login extends javax.swing.JPanel {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(etUser, javax.swing.GroupLayout.DEFAULT_SIZE, 356, Short.MAX_VALUE)
                             .addComponent(etPassword))))
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/Login.java
                 .addContainerGap(24, Short.MAX_VALUE))
+=======
+                .addContainerGap(25, Short.MAX_VALUE))
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/Login.java
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,7 +159,11 @@ public class Login extends javax.swing.JPanel {
                 .addComponent(jLabel3)
                 .addGap(14, 14, 14)
                 .addComponent(etPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/Login.java
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/Login.java
                 .addComponent(btnIniciarSesion)
                 .addGap(29, 29, 29))
         );
@@ -155,11 +172,22 @@ public class Login extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/Login.java
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/Login.java
         );
     }// </editor-fold>//GEN-END:initComponents
 

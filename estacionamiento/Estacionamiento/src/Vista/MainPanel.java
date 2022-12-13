@@ -4,21 +4,62 @@
  */
 package Vista;
 
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+=======
 import java.awt.BorderLayout;
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
 import javax.swing.JComponent;
 
 /**
  *
  * @author naxch
  */
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+<<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
 public class MainPanel extends javax.swing.JPanel {
+========
+public class PanelPrincipal extends javax.swing.JFrame {
+    
+    public Login login;
+>>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/PanelPrincipal.java
+=======
+public class MainPanel extends javax.swing.JPanel {
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
 
     /**
      * Creates new form mainPanel
      */
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+<<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+    public MainPanel() {
+        initComponents();
+========
+    public PanelPrincipal() {
+        login = new Login(this);
+        login.setSize(600, 465);
+        login.setLocation(0, 0);
+        
+        initComponents();
+        vistaPrograma(login);
+        
+    }
+    
+    
+    public void vistaPrograma(JComponent com){
+        pPrincipal.removeAll();
+        pPrincipal.add(com);
+        pPrincipal.repaint();
+        pPrincipal.revalidate();
+>>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/PanelPrincipal.java
+    }
+    
+    
+   
+=======
     public MainPanel() {
         initComponents();
     }
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
 
     public void setForm(JComponent com){
         panelSecundario.setVisible(true);
@@ -37,6 +78,10 @@ public class MainPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+<<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+=======
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         mainPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnServicios = new javax.swing.JButton();
@@ -44,12 +89,22 @@ public class MainPanel extends javax.swing.JPanel {
         btnChofer = new javax.swing.JButton();
         btnConsultar = new javax.swing.JButton();
         panelSecundario = new javax.swing.JPanel();
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+========
+        pPrincipal = new javax.swing.JPanel();
+>>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/PanelPrincipal.java
 
         setBackground(new java.awt.Color(136, 232, 242));
 
         mainPanel.setBackground(new java.awt.Color(136, 232, 242));
         mainPanel.setMaximumSize(new java.awt.Dimension(1000, 1000));
 
+<<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+=======
+
+        mainPanel.setBackground(new java.awt.Color(125, 210, 245));
+
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Menu Principal");
@@ -86,18 +141,29 @@ public class MainPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
         panelSecundario.setBackground(new java.awt.Color(136, 232, 242));
         panelSecundario.setMaximumSize(new java.awt.Dimension(1000, 1000));
 
+=======
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         javax.swing.GroupLayout panelSecundarioLayout = new javax.swing.GroupLayout(panelSecundario);
         panelSecundario.setLayout(panelSecundarioLayout);
         panelSecundarioLayout.setHorizontalGroup(
             panelSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
             .addGap(0, 543, Short.MAX_VALUE)
         );
         panelSecundarioLayout.setVerticalGroup(
             panelSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 259, Short.MAX_VALUE)
+=======
+            .addGap(0, 368, Short.MAX_VALUE)
+        );
+        panelSecundarioLayout.setVerticalGroup(
+            panelSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 254, Short.MAX_VALUE)
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         );
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
@@ -109,25 +175,42 @@ public class MainPanel extends javax.swing.JPanel {
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPanelLayout.createSequentialGroup()
                         .addGap(202, 202, 202)
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
                     .addGroup(mainPanelLayout.createSequentialGroup()
                         .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnConsultar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnServicios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnTicketVehiculo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnChofer, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
                         .addGap(94, 94, 94)
                         .addComponent(panelSecundario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(183, Short.MAX_VALUE))
+=======
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(panelSecundario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))))
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
                 .addGap(43, 43, 43)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPanelLayout.createSequentialGroup()
+=======
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
                         .addComponent(btnServicios)
                         .addGap(18, 18, 18)
                         .addComponent(btnTicketVehiculo, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -135,8 +218,40 @@ public class MainPanel extends javax.swing.JPanel {
                         .addComponent(btnChofer, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
                     .addComponent(panelSecundario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(31, Short.MAX_VALUE))
+========
+        javax.swing.GroupLayout pPrincipalLayout = new javax.swing.GroupLayout(pPrincipal);
+        pPrincipal.setLayout(pPrincipalLayout);
+        pPrincipalLayout.setHorizontalGroup(
+            pPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 635, Short.MAX_VALUE)
+        );
+        pPrincipalLayout.setVerticalGroup(
+            pPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 519, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(pPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/PanelPrincipal.java
+=======
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(panelSecundario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(63, 63, 63))
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -145,6 +260,7 @@ public class MainPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
                 .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -153,10 +269,28 @@ public class MainPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
     private void btnServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServiciosActionPerformed
         // TODO add your handling code here:
         PanelServicios panelServicios = new PanelServicios();
         panelServicios.setSize(600, 450);
+=======
+                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void btnServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServiciosActionPerformed
+        // TODO add your handling code here:
+        PanelServicios panelServicios = new PanelServicios();
+        panelServicios.setSize(600 , 450);
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         panelServicios.setLocation(0, 0);
         setForm(panelServicios);
 
@@ -165,7 +299,11 @@ public class MainPanel extends javax.swing.JPanel {
     private void btnTicketVehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTicketVehiculoActionPerformed
         // TODO add your handling code here:
         TicketVehiculo tiv = new TicketVehiculo();
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
         tiv.setSize(800, 500);
+=======
+        tiv.setSize(600, 450);
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         tiv.setLocation(0, 0);
         setForm(tiv);
     }//GEN-LAST:event_btnTicketVehiculoActionPerformed
@@ -173,8 +311,13 @@ public class MainPanel extends javax.swing.JPanel {
     private void btnChoferActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChoferActionPerformed
         // TODO add your handling code here:
         IngresarClientes ingcli = new IngresarClientes();
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
         ingcli.setSize(800,1000);
         ingcli.setLocation(0,0);
+=======
+        ingcli.setSize(800,800);
+        ingcli.setLocation(-70,0);
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java
         setForm(ingcli);
     }//GEN-LAST:event_btnChoferActionPerformed
 
@@ -195,5 +338,49 @@ public class MainPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel panelSecundario;
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.java
+========
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(PanelPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(PanelPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(PanelPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(PanelPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new PanelPrincipal().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel pPrincipal;
+>>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/PanelPrincipal.java
     // End of variables declaration//GEN-END:variables
 }
+=======
+    // End of variables declaration//GEN-END:variables
+}
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.java

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="f2" green="e8" red="88" type="rgb"/>
     </Property>
   </Properties>
+=======
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -23,13 +26,25 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
               <Component id="mainPanel" max="32767" attributes="0"/>
+=======
+              <Component id="mainPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
           <Component id="mainPanel" max="32767" attributes="0"/>
+=======
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="mainPanel" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
       </Group>
     </DimensionLayout>
   </Layout>
@@ -37,10 +52,14 @@
     <Container class="javax.swing.JPanel" name="mainPanel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
           <Color blue="f2" green="e8" red="88" type="rgb"/>
         </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[1000, 1000]"/>
+=======
+          <Color blue="f5" green="d2" red="7d" type="rgb"/>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
         </Property>
       </Properties>
 
@@ -53,6 +72,10 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="202" pref="202" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="421" max="-2" attributes="0"/>
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
+=======
+                          <EmptySpace max="32767" attributes="0"/>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -61,11 +84,19 @@
                               <Component id="btnTicketVehiculo" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnChofer" alignment="0" min="-2" pref="175" max="-2" attributes="0"/>
                           </Group>
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
                           <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
                           <Component id="panelSecundario" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="183" max="32767" attributes="0"/>
+=======
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="panelSecundario" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
               </Group>
           </Group>
         </DimensionLayout>
@@ -74,9 +105,15 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" pref="44" max="-2" attributes="0"/>
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
                   <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+=======
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
                           <Component id="btnServicios" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btnTicketVehiculo" min="-2" pref="36" max="-2" attributes="0"/>
@@ -85,9 +122,18 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btnConsultar" min="-2" pref="43" max="-2" attributes="0"/>
                       </Group>
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
                       <Component id="panelSecundario" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="31" max="32767" attributes="0"/>
+=======
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="panelSecundario" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
               </Group>
           </Group>
         </DimensionLayout>
@@ -147,6 +193,7 @@
           </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="panelSecundario">
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f2" green="e8" red="88" type="rgb"/>
@@ -155,16 +202,26 @@
               <Dimension value="[1000, 1000]"/>
             </Property>
           </Properties>
+=======
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
                   <EmptySpace min="0" pref="543" max="32767" attributes="0"/>
+=======
+                  <EmptySpace min="0" pref="368" max="32767" attributes="0"/>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD:estacionamiento/Estacionamiento/src/Vista/MainPanel.form
                   <EmptySpace min="0" pref="259" max="32767" attributes="0"/>
+=======
+                  <EmptySpace min="0" pref="254" max="32767" attributes="0"/>
+>>>>>>> 80c7468859780394946009343709dd21addffa9b:Estacionamiento/src/Vista/MainPanel.form
               </Group>
             </DimensionLayout>
           </Layout>
